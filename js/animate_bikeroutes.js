@@ -10,7 +10,7 @@ var map = new mapboxgl.Map({
     style: 'mapbox://styles/achamorro/cj6llaoyo87772qp8y7u7h4wt',
     //style: 'mapbox://styles/achamorro/cj12lc6ww00462sqsg2q46c4s',
     center: [-77.033937, 38.902444],
-    zoom: 13,
+    zoom: 12,
     interactive: false
 });
 map.scrollZoom.disable();
@@ -49,7 +49,6 @@ var batch = 0;
 
 var trips, subset, trips_mapped;
 var animationDuration = 23;
-var tally = 0;
 var form = d3.time.format("%I %p");
 
 
@@ -108,7 +107,7 @@ function vis(){
 
 function drawCircle(x,y){
   ctx.beginPath();
-  ctx.arc(x, y, 2.5, 0, Math.PI * 2, false);
+  ctx.arc(x, y, 2, 0, Math.PI * 2, false);
   ctx.strokeStyle = 'white';
   ctx.stroke();
   ctx.fill();
@@ -117,7 +116,7 @@ function drawCircle(x,y){
 
 function drawCircle(x,y,xprev,yprev){
   ctx.beginPath();
-  ctx.arc(x, y, 2.5, 0, Math.PI * 2, false);
+  ctx.arc(x, y, 2, 0, Math.PI * 2, false);
   ctx.strokeStyle = 'white';
   ctx.stroke();
   ctx.fill();
