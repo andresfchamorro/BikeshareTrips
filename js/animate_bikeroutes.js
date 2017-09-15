@@ -1,4 +1,5 @@
 //Setup map and global variables
+//change all
 
 var ratio = window.devicePixelRatio;
 
