@@ -76,7 +76,7 @@ function processTrips(data){
     var options = {units: 'kilometers'};
     var length = turf.length(line, options);
     var waypoints_projected = [];
-    for (var i=0; i<length; i = i + 0.02){
+    for (var i=0; i<length; i = i + 0.05){
       var along = turf.along(line,i,options);
       waypoints_projected.push(project(along.geometry.coordinates))
     }
