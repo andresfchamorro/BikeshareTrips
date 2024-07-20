@@ -3,12 +3,14 @@
 
 var ratio = window.devicePixelRatio;
 
+mapboxgl.accessToken = 'pk.eyJ1IjoiYWNoYW1vMTgiLCJhIjoiY2xmOHB3cXM5MDFiaTNybG1qbndkd3dkcyJ9.hShPgU7zwqzWSbtcM5pIAg'
 //mapboxgl.accessToken = 'pk.eyJ1IjoiYWNoYW1vcnJvIiwiYSI6ImNpcnFub3NuOTBodGtmZ204M2R2MmZobDIifQ.-eJXpRA44j_7MPBXg3z90A';
-mapboxgl.accessToken = 'pk.eyJ1IjoiYWNoYW1vcnJvIiwiYSI6ImNpcnFub3NuOTBodGtmZ204M2R2MmZobDIifQ.-eJXpRA44j_7MPBXg3z90A';
-//var light = 'mapbox://styles/mapbox/light-v9';
+// mapboxgl.accessToken = 'pk.eyJ1IjoiYWNoYW1vcnJvIiwiYSI6ImNpcnFub3NuOTBodGtmZ204M2R2MmZobDIifQ.-eJXpRA44j_7MPBXg3z90A';
+var light = 'mapbox://styles/mapbox/light-v9';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/achamorro/cj6llaoyo87772qp8y7u7h4wt',
+    style: light,
+    // style: 'mapbox://styles/achamorro/cj6llaoyo87772qp8y7u7h4wt',
     //style: 'mapbox://styles/achamorro/cj12lc6ww00462sqsg2q46c4s',
     center: [-77.033937, 38.902444],
     zoom: 12,
